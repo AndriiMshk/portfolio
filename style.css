@@ -1,0 +1,475 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+}
+.content {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+}
+.bg {
+  position: absolute;
+  width: 1440px;
+  height: 910px;
+  left: 0px;
+  top: 0px;
+  background-image: url(./img/hero.png);
+}
+header {
+  position: absolute;
+  width: 1440px;
+  height: 90px;
+  left: 0px;
+  top: 0px;
+}
+.logo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 20px;
+  top: 20px;
+}
+nav {
+  position: absolute;
+  height: 50px;
+  top: 20px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  left: 850px;
+  top: 20px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-right: 30px;
+}
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 30px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+}
+.switch {
+  width: 70px;
+  position: absolute;
+  height: 50px;
+  right: 20px;
+  top: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+.switch a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.hero {
+  position: absolute;
+  height: 330px;
+  left: 80px;
+  top: 250px;
+  color: #ffffff;
+}
+.hero h1 {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120px;
+  margin: 0;
+}
+.hero p {
+  height: 120px;
+  top: 130px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  width: 470px;
+  margin: 0;
+}
+.hero button {
+  position: absolute;
+  height: 55px;
+  width: 220px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 25px;
+  text-align: center;
+  color: #000000;
+  background: #bdae82;
+  border-radius: 0px;
+}
+#skills {
+  width: 100%;
+  position: absolute;
+  height: 482px;
+  left: 0px;
+  top: 910px;
+}
+.skills_items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  height: 242px;
+  top: 240px;
+}
+.skill_item {
+  text-align: center;
+  width: 320px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill_item h4 {
+  color: #ffffff;
+  width: 280px;
+  height: 40px;
+  top: 100px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 50px;
+}
+.skill_item p {
+  width: 280px;
+  height: 72px;
+  top: 160px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+#portfolio {
+  position: absolute;
+  width: 1440px;
+  height: 1500px;
+  left: 0px;
+  top: 1392px;
+}
+.season {
+  position: absolute;
+  width: 895px;
+  height: 55px;
+  left: 272px;
+  top: 240px;
+  display: flex;
+  justify-content: space-between;
+}
+.season button {
+  width: 220px;
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+.btn_false {
+  background-color: black;
+  color: #bdae82;
+}
+.btn_click {
+  background: #bdae82;
+  color: #000000;
+}
+.portfolio_items {
+  position: absolute;
+  height: 1145px;
+  left: 1.39%;
+  right: 1.39%;
+  top: 355px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 1145px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio_items img {
+  width: 450px;
+  height: 560px;
+}
+#video {
+  position: absolute;
+  width: 1440px;
+  height: 945px;
+  left: 0px;
+  top: 2892px;
+}
+.video {
+  position: absolute;
+  width: 1400px;
+  height: 705px;
+  left: 20px;
+  top: 240px;
+  background-image: url(./img/video.jpg);
+}
+.video img {
+  position: absolute;
+  left: 45.56%;
+  right: 45.43%;
+  top: 288px;
+  bottom: 30.37%;
+  background: transparent;
+}
+#prise {
+  position: absolute;
+  width: 100%;
+  height: 845px;
+  left: 0px;
+  top: 3837px;
+}
+.prise_items {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  width: 1400px;
+  height: 505px;
+  left: 20px;
+  top: 240px;
+}
+.prise_item {
+  border: 3px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  width: 450px;
+  height: 505px;
+}
+.prise_item h3 {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 56px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  top: 16px;
+}
+.prise_item h5 {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  color: #bdae82;
+}
+.discription_prise {
+  position: relative;
+  top: -25px;
+  width: 100%;
+  height: 180px;
+}
+.discription_prise span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.discription_prise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prise_btn {
+  width: 100%;
+  text-align: center;
+}
+.prise_item button {
+  width: 220px;
+  height: 55px;
+  background: #bdae82;
+  border-radius: 0px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+#contacts {
+  position: absolute;
+  width: 1440px;
+  height: 700px;
+  left: 0px;
+  top: 4682px;
+  background-image: url(./img/contact.jpg);
+}
+.form {
+  position: absolute;
+  width: 450px;
+  height: 445px;
+  left: 970px;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form h2 {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  color: #bdae82;
+  margin-top: 0px;
+}
+.form input {
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  color: #bdae82;
+  margin-bottom: 20px;
+}
+.form textarea {
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  color: #bdae82;
+}
+textarea::placeholder,
+input::placeholder {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  color: #bdae82;
+  font-size: 20px;
+}
+.form button {
+  background: #bdae82;
+  border-radius: 0px;
+  width: 220px;
+  height: 55px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+footer {
+  position: absolute;
+  width: 1440px;
+  height: 150px;
+  left: 0px;
+  top: 5382px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+}
+.footer_left {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 182px;
+  height: 50px;
+}
+.footer_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 188px;
+  height: 50px;
+  margin-right: 20px;
+}
+.section-title {
+  position: absolute;
+  height: 80px;
+  left: 25.69%;
+  right: 25.69%;
+  top: 80px;
+}
+.title {
+  position: relative;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  color: #bdae82;
+}
+.title::before {
+  background-color: #bdae82;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 100%;
+  z-index: -1;
+}
+.title-text {
+  display: inline-block;
+  background-color: black;
+  padding: 0 20px;
+}
