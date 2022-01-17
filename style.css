@@ -439,10 +439,10 @@ footer a {
   height: 50px;
 }
 .footer_right ul {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .section-title {
   position: absolute;
