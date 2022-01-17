@@ -4,7 +4,7 @@ html {
 body {
   background-color: black;
 }
-.content {
+main {
   position: relative;
   width: 1440px;
   margin: 0 auto;
@@ -435,12 +435,14 @@ footer a {
   height: 50px;
 }
 .footer_right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 188px;
   height: 50px;
-  margin-right: 20px;
+}
+.footer_right ul {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
 }
 .section-title {
   position: absolute;
