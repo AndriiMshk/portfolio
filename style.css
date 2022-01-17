@@ -115,6 +115,7 @@ nav {
   color: #000000;
   background: #bdae82;
   border-radius: 0px;
+  cursor: pointer;
 }
 #skills {
   width: 100%;
@@ -191,14 +192,17 @@ nav {
   font-size: 20px;
   line-height: 40px;
   text-align: center;
+  cursor: pointer;
 }
-.btn_false {
+.btn {
   background-color: black;
   color: #bdae82;
+  cursor: pointer;
 }
-.btn_click {
+.btn:hover {
   background: #bdae82;
   color: #000000;
+  cursor: pointer;
 }
 .portfolio_items {
   position: absolute;
@@ -321,6 +325,7 @@ nav {
   line-height: 40px;
   text-align: center;
   color: #000000;
+  cursor: pointer;
 }
 #contacts {
   position: absolute;
@@ -400,6 +405,7 @@ input::placeholder {
   font-size: 20px;
   line-height: 40px;
   text-align: center;
+  cursor: pointer;
 }
 footer {
   position: absolute;
@@ -437,12 +443,15 @@ footer a {
 .footer_right {
   width: 188px;
   height: 50px;
+  display: flex;
+  align-items: center;
 }
 .footer_right ul {
+  width: 100%;
+  list-style-type: none;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  text-decoration: none;
 }
 .section-title {
   position: absolute;
