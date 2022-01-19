@@ -46,6 +46,7 @@ nav {
   align-items: center;
   padding: 0;
   margin-right: 30px;
+  list-style-type: none;
 }
 .nav a {
   color: #ffffff;
@@ -74,6 +75,9 @@ nav {
 .switch a {
   color: #ffffff;
   text-decoration: none;
+}
+.switch_en a {
+  color: #bdae82;
 }
 .hero {
   position: absolute;
