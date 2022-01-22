@@ -1,0 +1,7 @@
+.portfolio_items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 60px 20px 0;
+  }

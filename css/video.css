@@ -1,0 +1,21 @@
+.video {
+    background-image: url(../img/video.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 705px;
+    padding: 0 20px;
+    position: relative;
+  }
+  .video svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  .video svg path {
+    transition: all 0.5s;
+  }
+  .video svg:hover path {
+    fill: #bdae82;
+  }
