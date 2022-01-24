@@ -1,25 +1,36 @@
 .season {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+.season button {
+  width: 220px;
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  height: 55px;
+  background-color: black;
+  color: #bdae82;
+  transition: all 0.5s;
+}
+.season button:hover,
+.season button.active {
+  background: #bdae82;
+  color: #000000;
+}
+@media screen and (max-width: 1000px) {
+  .season {
+    width: 445px;
+    margin: 0 auto;
   }
-  .season button {
-    width: 220px;
-    border: 2px solid #bdae82;
-    box-sizing: border-box;
-    border-radius: 0;
-    font-size: 20px;
-    line-height: 40px;
-    text-align: center;
-    cursor: pointer;
-    height: 55px;
-    background-color: black;
-    color: #bdae82;
-    transition: all 0.5s;
+}
+@media screen and (max-width: 500px) {
+  .season {
+    width: 90%;
   }
-  .season button:hover,
-  .season button.active {
-    background: #bdae82;
-    color: #000000;
-  }
+}

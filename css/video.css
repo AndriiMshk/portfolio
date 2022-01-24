@@ -1,21 +1,32 @@
 .video {
-    background-image: url(../img/video.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 705px;
-    padding: 0 20px;
-    position: relative;
+  background-image: url(../img/video.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 705px;
+  padding: 0 20px;
+  position: relative;
+}
+.video input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 130px;
+  width: 130px;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+}
+.video input:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  transition: all 1s;
+}
+@media screen and (max-width: 768px) {
+  .video {
+    height: 418px;
+    background-size: 100%;
   }
-  .video svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+  .video input {
+    width: 64px;
+    height: 64px;
   }
-  .video svg path {
-    transition: all 0.5s;
-  }
-  .video svg:hover path {
-    fill: #bdae82;
-  }
+}

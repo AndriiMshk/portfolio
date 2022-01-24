@@ -1,39 +1,63 @@
-
 .hero {
-    position: relative;
-    color: #ffffff;
-    height: 820px;
-  
+  position: relative;
+  color: #ffffff;
+  height: 820px;
+}
+.hero div {
+  position: absolute;
+  top: 181px;
+  left: 80px;
+}
+.hero div h1 {
+  font-family: Merriweather, sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+}
+.hero div p {
+  line-height: 40px;
+  max-width: 470px;
+  margin-top: 36px;
+}
+.hero div button {
+  height: 55px;
+  width: 220px;
+  margin-top: 25px;
+  text-align: center;
+  color: #000000;
+  background: #bdae82;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.hero div button:hover {
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 484px;
   }
   .hero div {
-    position: absolute;
-    top: 181px;
-    left: 80px;
+    top: 90px;
+    left: 20px;
+    width: 390px;
   }
   .hero div h1 {
-    font-family: Merriweather, sans-serif;
-    font-weight: bold;
-    font-size: 60px;
+    font-size: 32px;
   }
   .hero div p {
-    line-height: 40px;
-    max-width: 470px;
-    margin-top: 36px;
+    line-height: 24px;
+    margin-bottom: 60px;
+    margin-top: 30px;
   }
   .hero div button {
-    height: 55px;
-    width: 220px;
-    margin-top: 25px;
-    text-align: center;
-    color: #000000;
-    background: #bdae82;
-    border-radius: 0;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    transition: all 0.5s;
+    margin: 0;
   }
-  .hero div button:hover {
-    color: white;
-    cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .hero div {
+    width: 90%;
   }
+}

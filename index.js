@@ -1,6 +1,8 @@
-const burger = document.querySelector('.burger');
+const burger = document.querySelector(".burger");
+const nav_menu = document.querySelector(".nav_menu");
 
-//burger.addEventListener('click', () => console.log('click'))
-
-burger.onclick = () => console.log('click aaa');
-console.log(burger)
+burger.onclick = function () {
+  burger.classList.toggle("active");
+  nav_menu.classList.toggle("active");
+  document.body.classList.toggle("lock");
+};

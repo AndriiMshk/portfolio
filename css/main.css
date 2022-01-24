@@ -9,57 +9,85 @@
 @import url(./contacts.css);
 
 html {
-    scroll-behavior: smooth;
-  }
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  background: top no-repeat url(../img/hero.png) black;
+}
+body.lock {
+  overflow: hidden;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+a.active,
+a:hover {
+  color: #bdae82;
+  transition: color 0.3s;
+}
+.section-title {
+  margin: 100px auto 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 80px;
+  position: relative;
+}
+.section-title:before {
+  background-color: #bdae82;
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 100%;
+  z-index: -1;
+  background-position: center;
+}
+.section-title h3 {
+  font-family: Merriweather, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 0 20px;
+  background: #000000;
+  color: #bdae82;
+}
+@media screen and (max-width: 768px) {
   body {
-    width: 1440px;
-    max-width: 100%;
-    margin: 0 auto;
-    background-color: black;
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    background: top no-repeat url(../img/hero.png) black;
-  }
-  a {
-    color: #ffffff;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  a.active,
-  a:hover {
-    color: #bdae82;
-    transition: color 0.3s;
+    background-size: 129%;
+    background-position-x: center;
   }
   .section-title {
-    margin: 100px auto 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 700px;
-    height: 80px;
-    position: relative;
-  }
-  .section-title:before {
-    background-color: #bdae82;
-    content: "";
-    position: absolute;
-    top: 50%;
-    height: 2px;
-    width: 100%;
-    z-index: -1;
+    width: 364px;
   }
   .section-title h3 {
-    font-family: Merriweather, sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    padding: 0 20px;
-    background: #000000;
-    color: #bdae82;
+    font-size: 32px;
   }
+  .section-title {
+    margin: 100px auto 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-title {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-size: 220%;
+  }
+}

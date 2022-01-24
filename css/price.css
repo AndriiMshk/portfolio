@@ -1,72 +1,78 @@
-.prise_items {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 20px;
-    gap: 25px;
-    flex-wrap: wrap;
-    width: 1400px;
+.price_items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  gap: 25px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.price_item {
+  border: 3px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0;
+  width: 450px;
+  height: 505px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.price_item h3 {
+  font-family: Merriweather, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 56px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 43px;
+}
+.price_item h5 {
+  font-family: Merriweather, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  color: #bdae82;
+  margin: 20px 0;
+}
+.description_price span {
+  font-size: 18px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.description_price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price_btn {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0 43px;
+}
+.price_item button {
+  width: 220px;
+  height: 55px;
+  background: #bdae82;
+  border-radius: 0;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  font-size: 20px;
+}
+.price_item button:hover {
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+@media screen and (max-width: 500px) {
+  .price_item {
+    width: 90%;
   }
-  .prise_item {
-    border: 3px solid #bdae82;
-    box-sizing: border-box;
-    border-radius: 0;
-    width: 450px;
-    height: 505px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .prise_item h3 {
-    font-family: Merriweather, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 56px;
-    text-align: center;
-    color: #ffffff;
-    margin-top: 43px;
-  }
-  .prise_item h5 {
-    font-family: Merriweather, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 48px;
-    text-align: center;
-    color: #bdae82;
-    margin: 20px 0;
-  }
-  .description_prise span {
-    font-size: 18px;
-    line-height: 36px;
-    color: #ffffff;
-  }
-  .description_prise {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .prise_btn {
-    width: 100%;
-    text-align: center;
-    margin: 40px 0 43px;
-  }
-  .prise_item button {
-    width: 220px;
-    height: 55px;
-    background: #bdae82;
-    border-radius: 0;
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 40px;
-    text-align: center;
-    color: #000000;
-    cursor: pointer;
-    font-size: 20px;
-  }
-  .prise_item button:hover {
-    color: white;
-    cursor: pointer;
-    transition: all 0.5s;
-  }
+}

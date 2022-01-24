@@ -1,45 +1,62 @@
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 20px;
-    color: #ffffff;
-  }
-  nav {
-    display: flex;
-    align-items: center;
-  }
-  .nav {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin-right: 30px;
-    list-style-type: none;
-  }
-  .nav a {
-    margin-left: 31px;
-  }
-  .switch {
-    width: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  nav {
-    margin-left: auto;
-  }
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+  color: #ffffff;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-right: 30px;
+  list-style-type: none;
+}
+.nav a {
+  margin-left: 31px;
+}
+.switch {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  margin-left: auto;
+}
 .burger {
   display: none;
 }
-
-
-
+.nav_menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  transition: 1s;
+  height: 100%;
+  z-index: 1;
+}
+.nav_menu ul {
+  padding-top: 134px;
+  padding-left: 127px;
+  width: 100%;
+  list-style-type: none;
+  font-size: 35px;
+  line-height: 73px;
+}
+.nav_menu li {
+  margin-bottom: 16px;
+}
 @media screen and (max-width: 768px) {
   .burger {
-    margin-left: 20px;
+    margin-left: 25px;
+    margin-right: 64px;
     height: 28px;
-    width: 50px;
+    width: 40px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -49,47 +66,54 @@ header {
   .burger:hover span:before {
     background-color: #bdae82;
     transition: all 0.5s;
-  } 
-  
+  }
   .burger span {
     position: relative;
     display: block;
-    width: 50px;
-    height: 2px;
+    width: 40px;
+    height: 3px;
     background-color: white;
   }
   .burger span:before,
-  .burger span::after{
-    position:absolute;
+  .burger span::after {
+    position: absolute;
     display: block;
-    content: '';
-    width: 50px;
-    height: 2px;
+    content: "";
+    width: 40px;
+    height: 3px;
     background-color: white;
- 
   }
   .burger span:before {
-    top: -9px;
+    top: 10px;
   }
   .burger span:after {
-    bottom: -9px;
+    bottom: 10px;
   }
-
-  .burger_active span {
+  .burger.active span {
+    position: fixed;
     background: transparent;
+    z-index: 3;
   }
-  .burger_active:hover span {
+  .burger.active:hover span {
     background: transparent;
+    z-index: 3;
   }
-  .burger_active span::after {
-    transform: rotate(135deg) translate(-3px, 5px);
+  .burger.active span::after {
+    transform: rotate(45deg);
+    bottom: 0px;
+    z-index: 3;
   }
-  .burger_active span::before{
-    transform: rotate(-135deg) translate(-7px, -10px);
-
+  .burger.active span::before {
+    transform: rotate(-45deg);
+    top: 0px;
+    z-index: 3;
   }
-  
   .nav {
     display: none;
+  }
+  .nav_menu.active {
+    background-color: black;
+    width: 620px;
+    transition: 1s;
   }
 }
