@@ -16,29 +16,11 @@ html {
   margin: 0;
   padding: 0;
 }
-:root {
-  --background-dark: #000000;
-  --section-title-dark: #bdae82;
-  --hover-dark: #ffffff;
-  --active-dark: #ffffff;
-  --background-light: #ffffff;
-  --section-title-light: #000000;
-  --hover-light: #bdae82;
-  --active-light: #000000;
-}
-body.dark {
-  --background: var(--background-dark);
-  --section-title: var(--section-title-dark);
-  --hover: var(--hover-dark);
-  --active: var(--active-dark);
-}
-body.light {
-  --background: var(--background-light);
-  --section-title: var(--section-title-light);
-  --hover: var(--hover-light);
-  --active: var(--active-light);
-}
 body {
+  --background: #000000;
+  --section-title: #bdae82;
+  --hover: #ffffff;
+  --active: #ffffff;
   width: 1440px;
   max-width: 100%;
   margin: 0 auto;
@@ -47,6 +29,12 @@ body {
   font-weight: normal;
   font-size: 20px;
   background: top no-repeat url(../img/backgrounds/hero.png) var(--background);
+}
+body.light {
+  --background: #ffffff;
+  --section-title: #000000;
+  --hover: #bdae82;
+  --active: #000000;
 }
 body.lock {
   overflow: hidden;
