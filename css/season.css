@@ -22,11 +22,11 @@
   color: var(--hover);
 }
 .season_btn.active {
-background: #bdae82;
-color: var(--background);
+  background: #bdae82;
+  color: var(--background);
 }
 .season_btn.active:hover {
-  color: var(--active)
+  color: var(--active);
 }
 @media screen and (max-width: 1000px) {
   .season {

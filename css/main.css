@@ -18,12 +18,12 @@ html {
 }
 :root {
   --background-dark: #000000;
-  --section-title-dark: #BDAE82;
-  --hover-dark: #FFFFFF;
-  --active-dark: #FFFFFF;
-  --background-light: #FFFFFF;
+  --section-title-dark: #bdae82;
+  --hover-dark: #ffffff;
+  --active-dark: #ffffff;
+  --background-light: #ffffff;
   --section-title-light: #000000;
-  --hover-light: #BDAE82;
+  --hover-light: #bdae82;
   --active-light: #000000;
 }
 body.dark {
@@ -37,7 +37,7 @@ body.light {
   --section-title: var(--section-title-light);
   --hover: var(--hover-light);
   --active: var(--active-light);
- }
+}
 body {
   width: 1440px;
   max-width: 100%;
@@ -51,7 +51,6 @@ body {
 body.lock {
   overflow: hidden;
 }
-
 a {
   color: #ffffff;
   text-decoration: none;
@@ -89,9 +88,11 @@ a:hover {
   background: var(--background);
   color: var(--section-title);
 }
+
 @media screen and (max-width: 768px) {
   body {
-    background: top no-repeat url(../img/backgrounds/hero1.png) var(--background);
+    background: top no-repeat url(../img/backgrounds/hero1.png)
+      var(--background);
   }
   .section-title {
     width: 364px;
