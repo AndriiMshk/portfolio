@@ -3,6 +3,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
 }
 footer a {
   text-decoration: none;

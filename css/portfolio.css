@@ -1,9 +1,13 @@
 .portfolio_items {
-  display: flex;
+
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
   padding: 60px 20px 0;
+  display: none;
+}
+.portfolio_items.open {
+  display: flex;
 }
 @media screen and (max-width: 500px) {
   .portfolio_items img {

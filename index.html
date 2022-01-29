@@ -12,74 +12,82 @@
   <link href="./img/Vector.svg" rel="icon" type="image/x-icon" />
   <title>Portfolio</title>
 </head>
-<body>
+<body class="dark">
   <header>
-    <img alt="logo" src="./img/Vector.svg" />
+    <img alt="logo" src="./img/header/Vector.svg" />
     <nav>
       <ul class="nav">
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#video">Video</a></li>
-        <li><a href="#price">Price</a></li>
-        <li><a href="#contacts">Contacts</a></li>
+        <li><a data-i18='skills' href="#skills">Skills</a></li>
+        <li><a data-i18='portfolio' href="#portfolio">Portfolio</a></li>
+        <li><a data-i18='video' href="#video">Video</a></li>
+        <li><a data-i18='price' href="#price">Price</a></li>
+        <li><a data-i18='contacts' href="#contacts">Contacts</a></li>
       </ul>
     </nav>
-    <div class="switch"><a href="">en</a>/<a href="" class="active">ru</a></div>
+    <div class ='theme'>
+      <label class="switch">
+        <input id='switch-theme' type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="switch">
+      <a class="lang-en">en</a>/<a class="lang-ru">ru</a>
+    </div>
     <div class="burger">
       <span></span>
     </div>
     <div class="nav_menu">
       <ul>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#video">Video</a></li>
-        <li><a href="#price">Price</a></li>
-        <li><a href="#contacts">Contacts</a></li>
+        <li><a data-i18='skills' href="#skills">Skills</a></li>
+        <li><a data-i18='portfolio' href="#portfolio">Portfolio</a></li>
+        <li><a data-i18='video' href="#video">Video</a></li>
+        <li><a data-i18='price' href="#price">Price</a></li>
+        <li><a data-i18='contacts' href="#contacts">Contacts</a></li>
       </ul>
     </div>
   </header>
   <main>
     <section class="hero">
       <div>
-        <h1>Alexa Rise</h1>
-        <p>
+        <h1 data-i18='hero-title'>Alexa Rise</h1>
+        <p data-i18='hero-text'>
           Save sincere emotions, romantic feelings and happy moments of life
           together with professional photographer Alexa Rise
         </p>
-        <button>Hire me</button>
+        <button data-i18='hire'>Hire me</button>
       </div>
     </section>
     <section id="skills">
       <div class="section-title">
-        <h3>Skills</h3>
+        <h3 data-i18='skills'>Skills</h3>
       </div>
       <div class="skills_items">
         <div class="skill_item">
-          <img alt="1" src="./img/camera_1.svg" />
-          <h4>Digital photography</h4>
+          <img alt="1" src="./img/skills/camera_1.svg" />
+          <h4 data-i18='skill-title-1'>Digital photography</h4>
           <div class="skills_text">
-            <p>High-quality photos in the studio and on the nature</p>
+            <p data-i18='skill-text-1'>High-quality photos in the studio and on the nature</p>
           </div>
         </div>
         <div class="skill_item">
-          <img alt="2" src="./img/video_1.svg" />
-          <h4>Video shooting</h4>
+          <img alt="2" src="./img/skills/video_1.svg" />
+          <h4 data-i18='skill-title-2'>Video shooting</h4>
           <div class="skills_text">
-            <p>Capture your moments so that they always stay with you</p>
+            <p data-i18='skill-text-2'>Capture your moments so that they always stay with you</p>
           </div>
         </div>
         <div class="skill_item">
-          <img alt="3" src="./img/image_1.svg" />
-          <h4>Retouch</h4>
+          <img alt="3" src="./img/skills/image_1.svg" />
+          <h4 data-i18='skill-title-3'>Retouch</h4>
           <div class="skills_text">
-            <p>I strive to make photography surpass reality</p>
+            <p data-i18='skill-text-4'>I strive to make photography surpass reality</p>
           </div>
         </div>
         <div class="skill_item">
-          <img alt="4" src="./img/mic_1.svg" />
-          <h4>Audio</h4>
+          <img alt="4" src="./img/skills/mic_1.svg" />
+          <h4 data-i18='skill-title-4'>Audio</h4>
           <div class="skills_text">
-            <p>
+            <p data-i18='skill-text-4'>
               Professional sounds recording for video, advertising,
               portfolio
             </p>
@@ -89,87 +97,87 @@
     </section>
     <section id="portfolio">
       <div class="section-title">
-        <h3>Portfolio</h3>
+        <h3 data-i18='portfolio'>Portfolio</h3>
       </div>
       <div class="season">
-        <button>Winter</button>
-        <button>Spring</button>
-        <button>Summer</button>
-        <button class="active">Autumn</button>
+        <button class="season_btn" data-season='winter' data-i18='winter'onclick="handleChangeSeason('winter')">Winter</button>
+        <button class="season_btn" data-season='summer' data-i18='summer'onclick="handleChangeSeason('summer')">Summer</button>
+        <button class="season_btn" data-season='autumn' data-i18='autumn'onclick="handleChangeSeason('autumn')">Autumn</button>
+        <button class="season_btn" data-season='spring' data-i18='spring'onclick="handleChangeSeason('spring')">Spring</button>
       </div>
       <div class="portfolio_items">
-        <img alt="" src="./img/port_img/portfolio-img.png" />
-        <img alt="" src="./img/port_img/portfolio-img1.png" />
-        <img alt="" src="./img/port_img/portfolio-img2.png" />
-        <img alt="" src="./img/port_img/portfolio-img3.png" />
-        <img alt="" src="./img/port_img/portfolio-img4.png" />
-        <img alt="" src="./img/port_img/portfolio-img5.png" />
+        <img class="portfolio_item" alt="1" src="" />
+        <img class="portfolio_item" alt="2" src="" />
+        <img class="portfolio_item" alt="3" src="" />
+        <img class="portfolio_item" alt="4" src="" />
+        <img class="portfolio_item" alt="5" src="" />
+        <img class="portfolio_item" alt="6" src="" />
       </div>
     </section>
     <section id="video">
       <div class="section-title">
-        <h3>Video</h3>
+        <h3 data-i18='video'>Video</h3>
       </div>
       <div class="video">
-        <input type='image' src="./img/button_video.svg" />
+        <input type='image' src="./img/video/button_video.svg" />
       </div>
     </section>
     <section id="price">
       <div class="section-title">
-        <h3>Price</h3>
+        <h3  data-i18='price'>Price</h3>
       </div>
       <div class="price_items">
         <div class="price_item">
-          <h3>Standard</h3>
+          <h3 data-i18='price1'>Standard</h3>
           <h5>500 $</h5>
           <div class="description_price">
-            <span>One location</span>
-            <span>120 photos in color</span>
-            <span>12 photos in retouch</span>
-            <span>Readiness 2-3 weeks</span>
-            <span> Make up, visage</span>
+            <span data-i18='price-description-1-span-1'>One location</span>
+            <span data-i18='price-description-1-span-2'>120 photos in color</span>
+            <span data-i18='price-description-1-span-3'>12 photos in retouch</span>
+            <span data-i18='price-description-1-span-4'>Readiness 2-3 weeks</span>
+            <span data-i18='price-description-1-span-5'> Make up, visage</span>
           </div>
           <div class="price_btn">
-            <button>Order shooting</button>
+            <button data-i18='order'>Order shooting</button>
           </div>
         </div>
         <div class="price_item">
-          <h3>Premium</h3>
+          <h3 data-i18='price2'>Premium</h3>
           <h5>700 $</h5>
           <div class="description_price">
-            <span>One or two locations</span>
-            <span>200 photos in color</span>
-            <span>20 photos in retouch</span>
-            <span>Readiness 1-2 weeks</span>
-            <span>Make up, visage</span>
+            <span data-i18='price-description-2-span-1'>One or two locations</span>
+            <span data-i18='price-description-2-span-2'>200 photos in color</span>
+            <span data-i18='price-description-2-span-3'>20 photos in retouch</span>
+            <span data-i18='price-description-2-span-4'>Readiness 1-2 weeks</span>
+            <span data-i18='price-description-2-span-5'>Make up, visage</span>
           </div>
           <div class="price_btn">
-            <button>Order shooting</button>
+            <button data-i18='order'>Order shooting</button>
           </div>
         </div>
         <div class="price_item">
-          <h3>Gold</h3>
+          <h3 data-i18='price3'>Gold</h3>
           <h5>1000 $</h5>
           <div class="description_price">
-            <span> Three locations or more</span>
-            <span> 300 photos in color</span>
-            <span>50 photos in retouch</span>
-            <span>Readiness 1 week</span>
-            <span> Make up, visage, hairstyle</span>
+            <span data-i18='price-description-3-span-1'> Three locations or more</span>
+            <span data-i18='price-description-3-span-2'> 300 photos in color</span>
+            <span data-i18='price-description-3-span-3'>50 photos in retouch</span>
+            <span data-i18='price-description-3-span-4'>Readiness 1 week</span>
+            <span data-i18='price-description-3-span-5'> Make up, visage, hairstyle</span>
           </div>
           <div class="price_btn">
-            <button>Order shooting</button>
+            <button data-i18='order'>Order shooting</button>
           </div>
         </div>
       </div>
     </section>
     <section id="contacts">
       <div class="form">
-        <h2>Contact me</h2>
-        <input placeholder="      E-mail" type="email" />
-        <input placeholder="      Phone" type="tel" />
-        <textarea placeholder="   Message" rows="3"></textarea>
-        <button>Send message</button>
+        <h2 data-i18='contacts'>Contact me</h2>
+        <input data-i18='order' placeholder="E-mail" type="email" />
+        <input data-i18='contact-me' placeholder="Phone" type="tel" />
+        <textarea data-i18='message' placeholder="Message" rows="3"></textarea>
+        <button data-i18='send-message'>Send message</button>
       </div>
     </section>
   </main>
@@ -190,5 +198,9 @@
     </ul>
   </footer>
 </body>
-<script src="./index.js"></script>
+<script src="./js/portfolio.js"></script>
+<script type='module' src='./js/burger.js'></script>
+<script type='module' src='./js/language.js'></script>
+<script type='module' src='./js/themes.js'></script>
+<script type='module' src='./js/translate.js'></script>
 </html>

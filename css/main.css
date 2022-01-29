@@ -16,6 +16,28 @@ html {
   margin: 0;
   padding: 0;
 }
+:root {
+  --background-dark: #000000;
+  --section-title-dark: #BDAE82;
+  --hover-dark: #FFFFFF;
+  --active-dark: #FFFFFF;
+  --background-light: #FFFFFF;
+  --section-title-light: #000000;
+  --hover-light: #BDAE82;
+  --active-light: #000000;
+}
+body.dark {
+  --background: var(--background-dark);
+  --section-title: var(--section-title-dark);
+  --hover: var(--hover-dark);
+  --active: var(--active-dark);
+}
+body.light {
+  --background: var(--background-light);
+  --section-title: var(--section-title-light);
+  --hover: var(--hover-light);
+  --active: var(--active-light);
+ }
 body {
   width: 1440px;
   max-width: 100%;
@@ -24,11 +46,12 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  background: top no-repeat url(../img/hero.png) black;
+  background: top no-repeat url(../img/backgrounds/hero.png) var(--background);
 }
 body.lock {
   overflow: hidden;
 }
+
 a {
   color: #ffffff;
   text-decoration: none;
@@ -49,7 +72,7 @@ a:hover {
   position: relative;
 }
 .section-title:before {
-  background-color: #bdae82;
+  background-color: var(--section-title);
   content: "";
   position: absolute;
   top: 50%;
@@ -63,13 +86,12 @@ a:hover {
   font-weight: bold;
   font-size: 40px;
   padding: 0 20px;
-  background: #000000;
-  color: #bdae82;
+  background: var(--background);
+  color: var(--section-title);
 }
 @media screen and (max-width: 768px) {
   body {
-    background-size: 129%;
-    background-position-x: center;
+    background: top no-repeat url(../img/backgrounds/hero1.png) var(--background);
   }
   .section-title {
     width: 364px;
@@ -84,10 +106,5 @@ a:hover {
 @media screen and (max-width: 500px) {
   .section-title {
     width: 90%;
-  }
-}
-@media screen and (max-width: 500px) {
-  body {
-    background-size: 220%;
   }
 }

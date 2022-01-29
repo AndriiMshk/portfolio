@@ -14,7 +14,7 @@
   align-items: center;
 }
 .skill_item h4 {
-  color: #ffffff;
+  color: var(--section-title);
   width: 280px;
   height: 40px;
   top: 100px;
@@ -29,7 +29,7 @@
   width: 280px;
   font-size: 18px;
   line-height: 36px;
-  color: #ffffff;
+  color: var(--section-title);
 }
 @media screen and (max-width: 1360px) {
   .skills_items {

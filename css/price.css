@@ -24,7 +24,7 @@
   font-size: 28px;
   line-height: 56px;
   text-align: center;
-  color: #ffffff;
+  color: var( --active);
   margin-top: 43px;
 }
 .price_item h5 {
@@ -40,7 +40,7 @@
 .description_price span {
   font-size: 18px;
   line-height: 36px;
-  color: #ffffff;
+  color: var( --active);
 }
 .description_price {
   display: flex;

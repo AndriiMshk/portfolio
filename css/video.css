@@ -1,5 +1,5 @@
 .video {
-  background-image: url(../img/video.jpg);
+  background-image: url(../img/video/video-player.svg);
   background-position: center;
   background-repeat: no-repeat;
   height: 705px;
@@ -16,8 +16,7 @@
   transition: all 1s;
 }
 .video input:hover {
-  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-    contrast(87%);
+  filter: invert(26%) sepia(15%) saturate(638%);
   transition: all 1s;
 }
 @media screen and (max-width: 768px) {
