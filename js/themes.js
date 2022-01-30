@@ -8,7 +8,7 @@ switchThemeBtn.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", function() {
   const theme = localStorage.getItem('theme');
-  if(theme === 'light'){
+  if (theme === 'light'){
     switchThemeBtn.checked = true;
     document.body.classList.add("light");
   }

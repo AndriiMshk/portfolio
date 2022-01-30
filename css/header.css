@@ -8,6 +8,11 @@ header {
 header img {
   margin-right: 20px;
 }
+header img:hover {
+  filter: invert(26%) sepia(15%) saturate(638%);
+  transition: all 1s;
+  cursor: pointer;
+}
 nav {
   display: flex;
   align-items: center;
@@ -159,19 +164,25 @@ input:checked + .slider:before {
     transform: rotate(45deg);
     bottom: 0px;
     z-index: 3;
+    background-color: var(--active);
   }
   .burger.active span::before {
     transform: rotate(-45deg);
     top: 0px;
     z-index: 3;
+    background-color: var(--active);
   }
   .nav {
     display: none;
   }
   .nav_menu.active {
-    background-color: black;
+    background-color: var(--background);
     width: 620px;
     transition: 1s;
+    opacity: none;
+  }
+  .nav_menu.active a {
+    color: var(--active);
   }
   .nav_menu.active a:hover {
     color: #bdae82;

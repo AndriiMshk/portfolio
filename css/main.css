@@ -29,6 +29,7 @@ body {
   font-weight: normal;
   font-size: 20px;
   background: top no-repeat url(../img/backgrounds/hero.png) var(--background);
+  transition: 1s all;
 }
 body.light {
   --background: #ffffff;
@@ -38,6 +39,7 @@ body.light {
 }
 body.lock {
   overflow: hidden;
+  transition: 1s all;
 }
 a {
   color: #ffffff;
@@ -75,6 +77,14 @@ a:hover {
   padding: 0 20px;
   background: var(--background);
   color: var(--section-title);
+  transition: all 1s
+}
+body button {
+  transition: 0.5s all;
+}
+body button:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--active);
+	transform: translatey(-0.65em);
 }
 
 @media screen and (max-width: 768px) {

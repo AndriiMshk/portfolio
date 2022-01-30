@@ -10,6 +10,11 @@ footer a {
   line-height: 50px;
   color: #ffffff;
 }
+footer li:hover {
+  transition: all 1s;
+  cursor: pointer;
+  filter: invert(26%) sepia(15%) saturate(638%);
+}
 .footer_left {
   line-height: 50px;
   color: #ffffff;

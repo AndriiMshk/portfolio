@@ -8,6 +8,16 @@
 .portfolio_items.open {
   display: flex;
 }
+.portfolio_item {
+  transition: 0.5s all;
+}
+.portfolio_item:hover {
+  box-shadow: 0.5em 0.5em 0.5em -0.4em var(--active);
+	transform: translatey(-0.65em);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 500px) {
   .portfolio_items img {
     width: 90%;
