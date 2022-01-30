@@ -181,6 +181,17 @@ input:checked + .slider:before {
     transition: 1s;
     opacity: none;
   }
+  .nav_menu.active:before{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background: var(--background);
+    z-index: -1;
+    opacity: 70%;
+  }
   .nav_menu.active a {
     color: var(--active);
   }
