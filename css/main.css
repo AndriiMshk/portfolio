@@ -84,7 +84,11 @@ body button {
 }
 body button:hover {
   box-shadow: 0 0.5em 0.5em -0.4em var(--active);
-	transform: translatey(-0.65em);
+	transform: translatey(-0.35em);
+}
+button:active {
+  box-shadow: none !important;
+  transform: scale(1) !important;
 }
 
 @media screen and (max-width: 768px) {
